@@ -2,7 +2,7 @@
 
 import type { Component } from "@/lib/utils/component";
 import type { PropsWithChildren } from "react";
-import { cn } from "@/lib/utils/style/class";
+import { cn } from "@/lib/utils";
 import { Open_Sans } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
