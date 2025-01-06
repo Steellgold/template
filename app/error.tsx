@@ -1,9 +1,9 @@
 "use client";
 
-import { Button } from '@/components/ui/button';
-import { Component } from '@/lib/types';
-import { IterationCcw } from 'lucide-react';
-import { useEffect } from 'react'
+import { Button } from "@/components/ui/button";
+import { Component } from "@/lib/types";
+import { IterationCcw } from "lucide-react";
+import { useEffect } from "react";
 
 const Error: Component<{
   error: Error & { digest?: string }
