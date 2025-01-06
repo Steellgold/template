@@ -1,8 +1,9 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-import { Component } from "@/lib/types";
+import { ThemeProvider } from "@/components/theme-provider";
 import { PropsWithChildren } from "react";
+import { Component } from "@/lib/types";
+import localFont from "next/font/local";
+import type { Metadata } from "next";
+import "./globals.css";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -26,7 +27,14 @@ const Layout: Component<PropsWithChildren> = ({ children }) => {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
