@@ -1,0 +1,20 @@
+{
+  "Page": {
+    "Title": "Bonjour, le monde !",
+    "Description": "Ceci est un modèle pour un nouveau projet NextJS avec prise en charge de l'i18n."
+  },
+  "LanguageSelector": {
+    "Placeholder": "Sélectionnez une langue",
+    "Label": "Langue",
+    "Options": {
+      "en": "Anglais",
+      "fr": "Français"
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+{
+  "Page": {
+    "Title": "Hello, World!",
+    "Description": "This is an template for a new NextJS project with i18n support."
+  },
+  "LanguageSelector": {
+    "Placeholder": "Select a language",
+    "Label": "Language",
+    "Options": {
+      "en": "English",
+      "fr": "French"
+    }
+  }
+}
