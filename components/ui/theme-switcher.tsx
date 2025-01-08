@@ -5,7 +5,7 @@ import { Moon, Sun } from "lucide-react"
 import { useTheme } from "next-themes"
 import * as React from "react"
 
-export function ModeToggle() {
+export const ThemeSwitcher = () => {
   const { theme, setTheme } = useTheme()
 
   return (
