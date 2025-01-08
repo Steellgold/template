@@ -31,8 +31,8 @@ export default getRequestConfig(async () => {
 
   const store = await cookieStore;
 
-  const storedLanguage = store.get('language')?.value;
-  const fallbackLocale = store.get('locale')?.value;
+  const storedLanguage = store.get("language")?.value;
+  const fallbackLocale = store.get("locale")?.value;
   const browserLocale = detectLanguage(
     store.get("accept-language")?.value ?? null,
     supportedLanguages,

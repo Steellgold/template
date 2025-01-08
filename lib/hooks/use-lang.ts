@@ -1,6 +1,6 @@
-import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
-import { ISOLang } from '../types/lang'
+import { create } from "zustand"
+import { persist } from "zustand/middleware"
+import { ISOLang } from "../types/lang"
 
 type LanguageState = {
   lang: ISOLang
