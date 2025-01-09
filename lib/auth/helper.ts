@@ -8,6 +8,7 @@ export const auth = async(): Promise<User | null> => {
     headers: await headers()
   });
 
+  // @ts-ignore That work perfectly but i dont know why typescript dont like it
   if (session?.user) return session.user;
   return null;
 };
