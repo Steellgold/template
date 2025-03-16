@@ -5,6 +5,10 @@ const withNextIntl = createNextIntlPlugin(
   "./lib/i18n/request.ts"
 );
 
-const nextConfig = {};
+const nextConfig: NextConfig = {
+  experimental: {
+    authInterrupts: true
+  }
+};
 
 export default withNextIntl(nextConfig);
