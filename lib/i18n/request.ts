@@ -21,7 +21,6 @@ const detectLanguage = (
 };
 
 export default getRequestConfig(async () => {
-  const headersList = headers();
   const cookieStore = cookies();
   
   const supportedLanguages: SupportedLangs = {
