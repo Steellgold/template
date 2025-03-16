@@ -7,7 +7,7 @@ export const actionClient = createSafeActionClient();
 export const authActionClient = actionClient.use(async ({ next }) => {
   const session = await auth.api.getSession({ headers: await headers() });
 
-  if (!session?.user.id) {
+  if (!session?.user) {
     throw new Error("You are not authenticated. Please login to continue.");
   }
 
