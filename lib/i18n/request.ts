@@ -1,6 +1,6 @@
 import { getRequestConfig } from "next-intl/server";
-import { cookies, headers } from "next/headers";
-import { ISOLang, SupportedLangs, supportedLanguages } from "../types/lang";
+import { cookies } from "next/headers";
+import { ISOLang, SupportedLangs } from "../types/lang";
 
 const detectLanguage = (
   acceptLanguage: string | null,
